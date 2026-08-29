@@ -1,4 +1,3 @@
-cat > streamlit_dashboard.py << 'DASHBOARD_EOF_MARKER'
 """
 Aviary Insights — Bird Species Observation Dashboard
 ------------------------------------------------------
@@ -447,4 +446,3 @@ with tab_data:
     st.dataframe(filtered, use_container_width=True, hide_index=True)
     st.download_button("⬇ Download filtered data as CSV", data=filtered.to_csv(index=False).encode("utf-8"), file_name="bird_observations_filtered.csv", mime="text/csv")
     st.markdown('</div>', unsafe_allow_html=True)
-DASHBOARD_EOF_MARKER
